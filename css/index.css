@@ -1,0 +1,288 @@
+/*头部信息*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+list-style: none;
+}
+body {
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    background-color:#222222
+ }
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.box{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*头部开始*/
+header{
+    height: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+/*头部结束*/
+/*主体*/
+section{
+    width: 75%;
+    margin: 100px auto;
+}
+section .search{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    text-indent: 10px;
+    margin: 0px auto;
+
+}
+section ul{
+    border: 1px solid #cccccc;
+    width: 60%;
+    margin: 18px  auto;
+    cursor: pointer;
+    padding: 10px;
+    background: #cccccc;
+    opacity: 0.4;
+    font-size: 16px;
+    border-radius: 10px;
+    }
+section ul li{
+    height: 40px;
+    line-height: 40px;
+      padding: 5px;
+    border-bottom: 1px dashed white;
+}
+section ul li:hover {
+  color: #62f8ff;
+}
+/*结束*/
+/*控制条开始*/
+footer{
+    width: 100%;
+    height: 47px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: url("../img/playbar.png");
+}
+footer .btns{
+    height: 46px;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+}
+footer .btns .prev{
+    float: left;
+    width: 28px;
+    height: 28px;
+    background: url("../img/playbar.png")0px -123px;
+}
+footer .btns .start{
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 0 15px;
+    background: url("../img/playbar.png") 0px -198px;
+
+}
+footer .btns .next{
+    float: left;
+    width: 28px;
+    height: 28px;
+    background: url("../img/playbar.png") -80px -123px;
+
+}
+
+/*进度条*/
+footer .bars .logo{
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 20px;
+    /*background-color: red;*/
+    /*background: url("../img/109951163860425334.jpg");*/
+}
+footer .bars .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+footer .ctrl-bars-box {
+    font-size: 12px;
+    color: #cccccc;
+    margin: 5px 10px;
+}
+footer .ctrl-bars-box p span{
+    margin: 0 6px;
+}
+footer .ctrl-bars-box .ctrl-bars{
+    width: 400px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #cccccc;
+    position: relative;
+    top: 7px;
+    left: 2px;
+}
+footer .ctrl-bars-box .ctrl-bars .nowBars{
+    width: 0px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #c70c0c;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+footer .ctrl-bars-box .ctrl-bars .ctrl-btn{
+    width: 10px;
+    height: 10px;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ccc;
+}
+/*footer .ctrl-bars-box .ctrl-bars .ctrl-btn .ctrl-btn-small{*/
+    /*width: 6px;*/
+    /*height: 6px;*/
+    /*background-color: red;*/
+    /*border-radius: 50%;*/
+    /*margin: 5px;*/
+/*}*/
+footer .bars .times{
+    color: #fff;
+    font-size: 12px;
+    margin: 21px;
+}
+/*音量和模式的开始*/
+footer .modes{
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+footer .modes .voice{
+    width: 25px;
+    height: 25px;
+    background: url("../img/playbar.png")0px 372px;
+}
+footer .modes .mode{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    background: url("../img/playbar.png")0px 275px;
+
+}
+footer .modes .play-list{
+    width: 59px;
+    height: 28px;
+    background: url("../img/playbar.png") -41px 551px;
+
+}
+footer .play-list-box{
+    width: 50%;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 46px;
+    left: 25%;
+    font-size: 12px;
+    color: #dddddd;
+
+
+}
+footer .play-list-box .list-header{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 40px;
+    text-indent:  20px;
+
+    background: url("../img/playbar.png")0 0;
+}
+footer .play-list-box ul{
+background-color: #211e1d;
+    height: 160px;
+    overflow-y: auto;
+}
+footer .play-list-box ul li{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 20px;
+    color: #a8a8a8;
+   cursor: pointer;
+}
+footer .play-list-box ul li:hover{
+   background-color: #161313;
+    color: #ffffff;
+}
+footer .play-list-box ul li.active{
+    background-color: #161313;
+    color: #ffffff;
+}
+footer .play-list-box ul li  span:nth-of-type(2) {
+      margin-right: 20px;
+}
+    /*控制条结束*/
+/*hover*/
+footer .container .btns .prev:hover{
+    background-position-x: -29px;
+}
+footer .container .btns .start:hover{
+    background-position-x: -40px;
+}
+footer .container .btns .next:hover{
+    background-position-x: -109px;
+}
+
+
+footer .container .modes .voice:hover{
+    background-position-x: -30px;
+}
+footer .container .modes .mode:hover{
+    background-position-x:    -32px;
+}
+footer .container .modes .play-list:hover{
+    background-position-y: 520px;
+}
+
+/*结束*/
+.info{
+    width: 80px;
+    height: 30px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background-color: #211e1d;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    right: 435px;
+    border: 1px solid #FFFFFF;
+    display: none;
+    bottom: 46px;
+    z-index: 999999;
+}
+

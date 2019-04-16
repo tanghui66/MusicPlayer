@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>RetroArch Menu Ribbon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+<div id="container"></div>
+<script src='js/three.min.js'></script>
+<script src="js/index.js"></script>
+<div class="box">
+    <!--头部信息-->
+    <header>
+        <div class="container">
+            <h3 class="left">辉66音乐播放器</h3>
+            <p class="right">By -TangHui</p>
+        </div>
+        <!--中间部分-->
+
+        <div class="cler" style=" clear: both" ></div>
+        <section>
+            <div class="container">
+                <input class="search" onblur="if (value ==''){value='请输入歌名'}" onclick="if(this.value=='请输入歌名')this.value=''" value="请输入歌名" />
+                <!--<input type="text" class="search">-->
+                <ul>
+                    <li>
+                        <span class="left song">出山</span>
+                        <span class="right singer">番茄</span>
+                    </li>
+                    <li>
+                        <span class="left song">出山</span>
+                        <span class="right singer">番茄</span>
+                    </li>
+                    <li>
+                        <span class="left song">出山</span>
+                        <span class="right singer">番茄</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <!--控制条-->
+    <footer>
+        <!--控制-->
+        <div class="container">
+            <div class="btns left">
+                <div class="prev"></div>
+                <div class="start"></div>
+                <div class="next"></div>
+            </div>
+            <!--logo图-->
+            <div class="left bars">
+                <div class="left logo">
+                    <img src="img/109951163860425334.jpg" alt="">
+                </div>
+                <div class="ctrl-bars-box left">
+                    <p>
+                        <span></span>
+
+                    </p>
+                    <!--进度条-->
+                    <div class="ctrl-bars">
+                        <div class="nowBars"></div>
+                        <div class="ctrl-btn">
+                            <div class="ctrl-btn-small"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="times left">
+                    <span class="nowTime">00:00</span>
+                    /
+                    <span class="totalTime">00:00</span>
+                </div>
+            </div>
+            <!--音量，模式-->
+            <div class="modes left">
+                <div class="voice left"></div>
+                <div class="mode left"></div>
+                <div class="play-list left">
+
+                </div>
+            </div>
+        </div>
+        <div class="play-list-box">
+            <div class="list-header">
+                播放列表
+            </div>
+            <ul></ul>
+        </div>
+    </footer>
+
+</div>
+<div class="info"></div>
+
+<audio></audio>
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>
+
+<script src="js/lists.js"></script>
+<script src="js/index.js"></script>
+<script src="js/indexs.js"></script>
+</html>
